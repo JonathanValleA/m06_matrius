@@ -36,7 +36,7 @@ function test() {
     createTable(3,3);
     testAll();
 
-    createTable(5,6);
+    createTable(6,5);
 }
 function testAll() {
     testPaintAll();
@@ -78,7 +78,7 @@ function testPaintLeftHalf() {
             console.log("❌paintLeftHalf test fallat, ha petat la funció");
         }
     } else {
-        console.log("❌paintHalf is not implemented");
+        console.log("❌paintLeftHalf is not implemented");
     }
 }
 
