@@ -123,7 +123,7 @@ function testPaintUpperTriangle() {
     if (typeof paintUpperTriangle == "function") {
         try {
             paintUpperTriangle();
-            if (![...document.getElementsByTagName("tr")].map((e)=>[...e.children].filter((el)=>el.style.backgroundColor=="red").length).every((e,i,a)=>e==(a.length-i-1))) {
+            if (![...document.getElementsByTagName("tr")].map((e)=>[...e.children].filter((el)=>el.style.backgroundColor=="red").length).every((e,i,a)=>e==(document.getElementsByTagName("tr")[0].children.length-i))) {
                 console.log("❌No tots els elements del triangle superior estan pintats");
             } else {
                 console.log("✔️ paintUpperTriangle test passat");
