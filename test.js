@@ -59,7 +59,7 @@ function testPaintAll() {
             if (![...document.getElementsByTagName("td")].every((e)=>e.style.backgroundColor=="red")) {
                 console.log("❌Test fallat, no tots els elements son vermells");
             } else {
-                console.log("✔️ paintAll test passat");
+                console.log("✅ paintAll test passat");
             }
         } catch(e) {
             console.log("❌paintAll test fallat, ha petat la funció");
@@ -76,7 +76,7 @@ function testPaintLeftHalf() {
             if (![...document.getElementsByTagName("td")].filter((e,index)=>index%matrix[0].length < (matrix[0].length/2)).every((e)=>e.style.backgroundColor=="red")) {
                 console.log("❌No tots els elements de la meitat esquerra estan pintats");
             } else {
-                console.log("✔️ paintLeftHalf test passat");
+                console.log("✅ paintLeftHalf test passat");
             }
         } catch(e) {
             console.log("❌paintLeftHalf test fallat, ha petat la funció");
@@ -93,7 +93,7 @@ function testPaintRightHalf() {
             if (![...document.getElementsByTagName("td")].filter((e,index)=>index%matrix[0].length > (matrix[0].length/2)).every((e)=>e.style.backgroundColor=="red")) {
                 console.log("❌No tots els elements de la meitat dreta estan pintats");
             } else {
-                console.log("✔️ paintRightHalf test passat");
+                console.log("✅ paintRightHalf test passat");
             }
         } catch(e) {
             console.log("❌paintRightHalf test fallat, ha petat la funció");
@@ -110,7 +110,7 @@ function testPaintUpperHalf() {
             if (![...document.getElementsByTagName("td")].filter((e,index,m)=>index<m.length/2 > (matrix[0].length/2)).every((e)=>e.style.backgroundColor=="red")) {
                 console.log("❌No tots els elements de la meitat superior estan pintats");
             } else {
-                console.log("✔️ paintUpperHalf test passat");
+                console.log("✅ paintUpperHalf test passat");
             }
         } catch(e) {
             console.log("❌paintUpperHalf test fallat, ha petat la funció");
@@ -127,7 +127,7 @@ function testPaintLowerTriangle() {
             if (![...document.getElementsByTagName("tr")].map((e)=>[...e.children].filter((el)=>el.style.backgroundColor=="red").length).every((e,i)=>e==i)) {
                 console.log("❌No tots els elements del triangle inferior estan pintats");
             } else {
-                console.log("✔️ paintLowerTriangle test passat");
+                console.log("✅ paintLowerTriangle test passat");
             }
         } catch(e) {
             console.log("❌ paintLowerTriangle test fallat, ha petat la funció");
@@ -144,7 +144,7 @@ function testPaintUpperTriangle() {
             if (![...document.getElementsByTagName("tr")].map((e)=>[...e.children].filter((el)=>el.style.backgroundColor=="red").length).every((e,i,a)=>e==(document.getElementsByTagName("tr")[0].children.length-i))) {
                 console.log("❌No tots els elements del triangle superior estan pintats");
             } else {
-                console.log("✔️ paintUpperTriangle test passat");
+                console.log("✅ paintUpperTriangle test passat");
             }
         } catch(e) {
             console.log("❌paintUpperTriangle test fallat, ha petat la funció");
@@ -173,7 +173,7 @@ function testPaintCheckerboard() {
             if (![...document.getElementsByTagName("td")].filter((e,i)=>(i%2)==0).every((e)=>e.style.backgroundColor == "red"))  {
                 console.log("❌paintCheckerboard incorrecte");
             } else {
-                console.log("✔️ paintCheckerboard incorrecte");
+                console.log("✅ paintCheckerboard test passat");
             }
 
         } catch(e) {
@@ -191,7 +191,7 @@ function testPaintCheckerboard2() {
             if (![...document.getElementsByTagName("td")].filter((e,i)=>(i%2)==1).every((e)=>e.style.backgroundColor == "red")) {
                 console.log("❌paintCheckerboard2 incorrecte");
             } else {
-                console.log("✔️ paintCheckerboard2 test passat");
+                console.log("✅ paintCheckerboard2 test passat");
             }
         } catch(e) {
             console.log("❌paintCheckerboard2 test fallat, ha petat la funció");
