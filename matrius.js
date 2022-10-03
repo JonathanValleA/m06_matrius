@@ -20,7 +20,7 @@ function erase() {
     }
 }
 
-function paintHalf() {
+function paintRightHalf() {
     erase();
     for (;; ) { // afegir codi
         for (;; ) { // afegir codi
@@ -29,7 +29,7 @@ function paintHalf() {
     }
 }
 
-function paintOtherHalf() {
+function paintLeftHalf() {
     erase();
 
     for (;; ) { // afegir codi
