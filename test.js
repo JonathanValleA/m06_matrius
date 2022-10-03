@@ -27,14 +27,17 @@ function createTable(x,y) {
 function test() {
     console.log("Provant matriu 5x6 ...");
     testAll();
+    console.log("\n");
 
     console.log("Provant matriu 100x100 ...");
     createTable(100,100);
     testAll();
+    console.log("\n");
 
     console.log("Provant matriu 3x3 ...");
     createTable(3,3);
     testAll();
+    console.log("\n");
 
     createTable(6,5);
 }
