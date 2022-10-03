@@ -15,7 +15,7 @@ function paintAll() {
 function erase() {
     for (;; ) { // afegir codi
         for (;; ) { // afegir codi
-            matrix[i][j].style.backgroundColor = "red";
+            matrix[i][j].style.backgroundColor = "white";
         }
     }
 }
