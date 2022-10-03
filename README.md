@@ -1,4 +1,4 @@
-# exercicisMatrius
+# Exercicis Matrius
 ## Exercici 1
 Omple la funció 'paintAll' de manera que totes les cel·les de la taula es pintin de vermell:
 
@@ -8,13 +8,17 @@ Omple la funció 'erase' de manera que totes les cel·les de la taula s'esborrin
 
 ![erase](images/erase.png "erase")
 ## Exercici 4
-Omple la funció 'paintLeftHalf' de manera que la meitat horitzontal de la taula es quedi pintada.
+Omple la funció 'paintLeftHalf' de manera que la meitat horitzontal esquerra de la taula es quedi pintada.
 
 ![paintLeftHalf](images/paintLeftHalf.png "paintLeftHalf")
-## Exercici 4
-Omple la funció 'paintRightHalf' de manera que la meitat vertical de la taula es quedi pintada
+## Exercici 5
+Omple la funció 'paintRightHalf' de manera que la meitat horitzontal dreta de la taula es quedi pintada
 
 ![paintRightHalf](images/paintRightHalf.png "paintRightHalf")
+## Exercici 4
+Omple la funció 'paintUpperHalf' de manera que la meitat vertical de la taula es quedi pintada
+
+![paintRightHalf](images/paintUpperHalf.png "paintUpperHalf")
 ## Exercici 5
 Omple la funció 'paintLowerTriangle' de manera que el triangle inferior (sense la diagonal) quedi pintat.
 

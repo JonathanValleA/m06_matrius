@@ -45,6 +45,7 @@ function testAll() {
     testPaintAll();
     testPaintRightHalf();
     testPaintLeftHalf();
+    testPaintUpperHalf();
     testPaintLowerTriangle();
     testPaintUpperTriangle();
     testPaintPerimeter();
@@ -99,6 +100,23 @@ function testPaintRightHalf() {
         }
     } else {
         console.log("❌paintRightHalf is not implemented");
+    }
+}
+
+function testPaintUpperHalf() {
+    if (typeof paintUpperHalf == "function") {
+        try {
+            paintUpperHalf();
+            if (![...document.getElementsByTagName("td")].filter((e,index,m)=>index<m.length/2 > (matrix[0].length/2)).every((e)=>e.style.backgroundColor=="red")) {
+                console.log("❌No tots els elements de la meitat superior estan pintats");
+            } else {
+                console.log("✔️ paintUpperHalf test passat");
+            }
+        } catch(e) {
+            console.log("❌paintUpperHalf test fallat, ha petat la funció");
+        }
+    } else {
+        console.log("❌paintUpperHalf is not implemented");
     }
 }
 

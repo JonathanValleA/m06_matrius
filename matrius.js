@@ -40,6 +40,17 @@ function paintLeftHalf() {
 
 }
 
+function paintUpperHalf() {
+    erase();
+
+    for (;; ) { // afegir codi
+        for (;; ) { // afegir codi
+            matrix[i][j].style.backgroundColor = "red";
+        }
+    }
+
+}
+
 function paintLowerTriangle() {
     erase();
 
