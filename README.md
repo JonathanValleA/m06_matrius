@@ -24,7 +24,7 @@ Omple la funció 'paintLowerTriangle' de manera que el triangle inferior (sense 
 
 ![paintLowerTriangle](images/paintLowerTriangle.png "paintLowerTriangle")
 ## Exercici 6
-Omple la funció 'paintUpperTriangle' de manera que el triangle superior (sense la diagonal) quedi pintat.
+Omple la funció 'paintUpperTriangle' de manera que el triangle superior (amb la diagonal) quedi pintat.
 
 ![paintUpperTriangle](images/paintUpperTriangle.png "paintUpperTriangle")
 ## Exercici 7
