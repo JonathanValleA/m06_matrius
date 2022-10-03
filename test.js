@@ -152,6 +152,12 @@ function testPaintCheckerboard() {
     if (typeof paintCheckerboard == "function") {
         try {
             paintCheckerboard();
+            if (![...document.getElementsByTagName("td")].filter((e,i)=>(i%2)==0).every((e)=>e.style.backgroundColor == "red"))  {
+                console.log("❌paintCheckerboard incorrecte");
+            } else {
+                console.log("✔️ paintCheckerboard incorrecte");
+            }
+
         } catch(e) {
             console.log("❌paintCheckerboard test fallat, ha petat la funció");
         }
@@ -164,6 +170,11 @@ function testPaintCheckerboard2() {
     if (typeof paintCheckerboard2 == "function") {
         try {
             paintCheckerboard2();
+            if (![...document.getElementsByTagName("td")].filter((e,i)=>(i%2)==1).every((e)=>e.style.backgroundColor == "red")) {
+                console.log("❌paintCheckerboard2 incorrecte");
+            } else {
+                console.log("✔️ paintCheckerboard2 test passat");
+            }
         } catch(e) {
             console.log("❌paintCheckerboard2 test fallat, ha petat la funció");
         }
