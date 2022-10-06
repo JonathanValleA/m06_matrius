@@ -5,16 +5,17 @@ for (var i = 0; i < rows.length; i++) {
 }
 function paintAll() {
     erase();
-    for (;; ) { // afegir codi
-        for (;; ) { // afegir codi
+    for (let i = 0; i < rows.length; i++) { // afegir codi
+        for (let j = 0; j < 5; j++) { // afegir codi
             matrix[i][j].style.backgroundColor = "red";
         }
     }
+    console.log(matrix);
 }
 
 function erase() {
-    for (;; ) { // afegir codi
-        for (;; ) { // afegir codi
+    for (let i = 0; i < rows.length; i++) { // afegir codi
+        for (let j = 0; j < 5; j++) { // afegir codi
             matrix[i][j].style.backgroundColor = "white";
         }
     }
@@ -22,9 +23,11 @@ function erase() {
 
 function paintRightHalf() {
     erase();
-    for (;; ) { // afegir codi
-        for (;; ) { // afegir codi
-            matrix[i][j].style.backgroundColor = "red";
+    for (let i = 0; i < rows.length; i++) { // afegir codi
+        for (let j = 0; j < matrix[i].length; j++) { // afegir codi
+            if(j == 3 || j == 4){
+                matrix[i][j].style.backgroundColor = "red";
+            }
         }
     }
 }
@@ -32,8 +35,8 @@ function paintRightHalf() {
 function paintLeftHalf() {
     erase();
 
-    for (;; ) { // afegir codi
-        for (;; ) { // afegir codi
+    for (let i = 0; i < rows.length; i++) { // afegir codi
+        for (let j = 0; j < 3; j++) { // afegir codi
             matrix[i][j].style.backgroundColor = "red";
         }
     }
@@ -42,9 +45,8 @@ function paintLeftHalf() {
 
 function paintUpperHalf() {
     erase();
-
-    for (;; ) { // afegir codi
-        for (;; ) { // afegir codi
+    for (let i = 0; i < 3; i++) { // afegir codi
+        for (let j = 0; j < 5; j++) { // afegir codi
             matrix[i][j].style.backgroundColor = "red";
         }
     }
@@ -54,9 +56,11 @@ function paintUpperHalf() {
 function paintLowerTriangle() {
     erase();
 
-    for (;; ) { // afegir codi
-        for (;; ) { // afegir codi
-            matrix[i][j].style.backgroundColor = "red";
+    for (let i = 0; i < rows.length; i++) { // afegir codi
+        for (let j = 0; j < matrix.length; j++) { // afegir codi
+            if(i > j){
+                matrix[i][j].style.backgroundColor = "red";
+            }
         }
     }
 
@@ -64,39 +68,44 @@ function paintLowerTriangle() {
 
 function paintUpperTriangle() {
     erase();
-    for (;; ) { // afegir codi
-        for (;; ) { // afegir codi
-            // afegir codi
-            matrix[i][j].style.backgroundColor = "red";
+    for (let i = 0; i < rows.length; i++) { // afegir codi
+        for (let j = 0; j < matrix.length-1; j++) { // afegir codi
+            if(i <= j){
+                matrix[i][j].style.backgroundColor = "red";
+            }
         }
     }
-
 }
 
 function paintPerimeter() {
     erase();
-    for (;;) {
-        for (;;) {
-            // afegir codi
-            matrix[i][j].style.backgroundColor = "red";
+    for (let i = 0; i <  rows.length; i++) { // afegir codi
+        for (let j = 0; j < matrix[i].length; j++) { // afegir codi
+            if(i % 5 == 0 || j % 4 == 0){
+                matrix[i][j].style.backgroundColor = "red";
+            }
         }
     }
+    console.log(matrix);
 }
 
 function paintCheckerboard() {
     erase();
-    for (;; ) { // afegir codi
-        for (;; ) { // afegir codi
-            // afegir codi
-            matrix[i][j].style.backgroundColor = "red";
+    for (let i = 0; i < rows.length; i++) { // afegir codi
+        for (let j = 0; j < matrix[i].length; j++) { // afegir codi
+            if(i % 2 == 0 && j % 2 == 0 || i % 2 ==  1 && j % 2 == 1){
+                matrix[i][j].style.backgroundColor = "red";
+            }
         }
     }
 }
 function paintCheckerboard2() {
     erase();
-    for (;; ) { // afegir codi
-        for (;; ) { // afegir codi
-            matrix[i][j].style.backgroundColor = "red";
+    for (let i = 0; i < rows.length; i++) { // afegir codi
+        for (let j = 0; j < matrix[i].length; j++) { // afegir codi
+            if(!(i % 2 == 0 && j % 2 == 0 || i % 2 ==  1 && j % 2 == 1)){
+                matrix[i][j].style.backgroundColor = "red";
+            }
         }
     }
 }
